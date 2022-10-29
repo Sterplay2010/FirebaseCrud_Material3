@@ -10,19 +10,27 @@
     tools:context=".romanos.RomanosActivity">
 
 
-    <EditText
-        android:inputType="number"
-        android:id="@+id/number"
-        android:layout_margin="20dp"
-        tools:text="89"
-        android:gravity="center"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        android:hint="Numero Normal">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/number"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/result"
         android:layout_margin="20dp"
-        tools:text="XL"
+        android:hint="Resultado"
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="25dp"
