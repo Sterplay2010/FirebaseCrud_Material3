@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.numerosromanos.authentication.LoginFirebaseActivity
 import com.example.numerosromanos.databinding.ActivityMainBinding
 import com.example.numerosromanos.firebase.FirebaseActivity
 import com.example.numerosromanos.romanos.RomanosActivity
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.romanos.setOnClickListener {
             startActivity(Intent(this,RomanosActivity::class.java))
+        }
+
+        binding.auth.setOnClickListener {
+            startActivity(Intent(this,LoginFirebaseActivity::class.java))
         }
     }
 
