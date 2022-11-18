@@ -9,36 +9,75 @@
     android:padding="50dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:text="Unidad 2"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="#616161"
-        android:textSize="30dp"
-        android:layout_marginBottom="20dp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/firebase"
-        android:text="Firebase Crud"
-        android:layout_margin="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Unidad 2"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#616161"
+                android:textSize="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/romanos"
-        android:text="Numeros Romanos"
-        android:layout_margin="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/firebase"
+                android:text="Firebase Crud"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/auth"
-        android:text="Authentication"
-        android:layout_margin="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/romanos"
+                android:text="Numeros Romanos"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
+            <Button
+                android:id="@+id/auth"
+                android:text="Authentication"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/maps"
+                android:text="Google Maps"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/sharedPreferences"
+                android:text="Actividad Auth"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/realTime"
+                android:text="Realtime"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/practice"
+                android:text="Crud"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
