@@ -7,6 +7,7 @@ import android.widget.Toast
 import com.example.numerosromanos.authentication.LoginFirebaseActivity
 import com.example.numerosromanos.crudrealtime.CrudRealtimeActivity
 import com.example.numerosromanos.databinding.ActivityMainBinding
+import com.example.numerosromanos.examen.GatoActivity
 import com.example.numerosromanos.firebase.FirebaseActivity
 import com.example.numerosromanos.mapas.MapsActivity
 import com.example.numerosromanos.practica.LoginActivity
@@ -52,6 +53,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.practice.setOnClickListener {
             startActivity(Intent(this,CrudRealtimeActivity::class.java))
+        }
+
+        binding.gato.setOnClickListener {
+            startActivity(Intent(this,GatoActivity::class.java))
         }
     }
 
